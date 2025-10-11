@@ -1,8 +1,12 @@
 from user import User
 isim=input("isminizi giriniz: ")
-u1=User(isim)
+soyisim=input("soyisminizi giriniz: ")
+sifre=input("sifrenizi giriniz: ")
+u1=User(isim,soyisim,sifre)
 u1.gelir_kayit()
 u1.gider_kayit()
 u1.gelir_gider_hesapla()
 u1.gunluk_gider()
+u1.gelir_gider_hesapla()
+u1.ek_gelir_ekle(500)
 u1.gelir_gider_hesapla()
